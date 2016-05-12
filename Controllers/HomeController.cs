@@ -7,10 +7,10 @@
     {
         public IActionResult Index()
         {
-            return View(User());
+            return View(this.GetUser());
         }
 
-        public User User()
+        public User GetUser()
         {
             User user = new User()
             {
